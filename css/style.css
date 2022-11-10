@@ -416,7 +416,7 @@ img {
   width: 280px;
   background-color: var(--container-color);
   padding: 0.5rem 0.5rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.625rem;
   margin: 0 auto;
   transition: 0.2s;
   position: relative;
@@ -564,7 +564,6 @@ img {
   visibility: visible;
 }
 
-
 .about__modal-content {
   position: relative;
   background-color: var(--container-color);
@@ -594,4 +593,69 @@ img {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
+}
+
+/* Steps */
+.steps__bg {
+  background-color: var(--container-color);
+  padding: 3rem 2rem 2rem;
+  border-radius: 0.625rem;
+}
+
+.steps__container {
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.steps__title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.steps__card {
+  padding: 2.5rem 2.5rem 2rem 1.5rem;
+  border-radius: .625rem;
+  border: 2px solid #fff;
+  gap: .6rem;
+}
+
+.steps__card-number {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: var(--josefin-sans);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 1px;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.steps__card-title {
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+}
+
+.steps__card-description {
+  font-size: var(--small-font-size);
+  font-family: var(--paragraph-font);
+  line-height: 1.75;
+}
+
+.steps__card:hover .steps__card-number {
+  transform: translateY(-0.25rem);
+}
+
+.steps__card-link {
+  font-size: var(--small-font-size);
+  font-family: var(--paragraph-font);
+  background-color: var(--title-color);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--body-color);
+  font-weight: 600;
+  box-shadow: 0 0 15px #fff;
+  margin-top: 5px;
 }
