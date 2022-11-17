@@ -767,6 +767,10 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
+.price__buy a {
+  color: var(--body-color);
+}
+
 /* Footer */
 .footer__info {
   padding-bottom: 6rem;
