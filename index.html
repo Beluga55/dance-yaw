@@ -46,7 +46,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="ri-home-5-line"></i> Home
               </a>
             </li>
@@ -91,10 +91,13 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <h1 class="home__title">
+            <h1 class="home__title hide-for-desktop">
               The <br />
-              Danceyaw Lua is <br />
-              Coming Soon
+              Danceyaw Lua is Coming Soon
+            </h1>
+
+            <h1 class="home__title hide-for-mobile">
+              The Danceyaw Lua is Coming Soon
             </h1>
 
             <p class="home__description">
@@ -104,14 +107,16 @@
               enemies!
             </p>
 
-            <button class="home__buttons">
-              <a
-                href="https://en.neverlose.cc/market/item?id=hDDhvw"
-                target="_blank"
-              >
-                Buy Now
-              </a>
-            </button>
+            <div class="home__flex">
+              <button class="home__buttons">
+                <a
+                  href="https://en.neverlose.cc/market/item?id=hDDhvw"
+                  target="_blank"
+                >
+                  Buy Now
+                </a>
+              </button>
+            </div>
           </div>
 
           <div class="home__more">
@@ -149,8 +154,8 @@
       </section>
 
       <!--==================== ABOUT ====================-->
-      <section class="section about" id="about">
-        <div class="container">
+      <section class="section" id="about">
+        <div class="about container">
           <h1 class="about__title">Features of the Lua</h1>
           <p class="about__subtitle-section">
             These are the features of the lua and click more features to check
@@ -571,28 +576,36 @@
 
       <!--==================== PRICES ====================-->
       <section class="price section container" id="prices">
-        <h2 class="price__title">Prices</h2>
-        <p class="price__description">These Are The Information Of The Lua</p>
-
-        <div class="price__container about__box">
-          <h3 class="price__information">Buy Information</h3>
-
-          <div class="price__desc">
-            <i class="bx bxs-check-square"></i>
-            <p class="price__text">0.50 NLE</p>
+        <div class="price__container">
+          <div class="price__first">
+            <h2 class="price__title">Prices</h2>
+            <p class="price__description">
+              Why Still Hesitate? The Price Is Reasonable And Affordable For
+              Almost Everyone. Buy It And Dominate All The HVH People With The
+              Latest DanceYaw Lua.
+            </p>
           </div>
 
-          <div class="price__desc price__second">
-            <i class="bx bxs-check-square"></i>
-            <p class="price__text">Script source: Closed</p>
-          </div>
+          <div class="price__second-buy about__box">
+            <h3 class="price__information">Buy Information</h3>
 
-          <div class="price__buy">
-            <a
-              href="https://en.neverlose.cc/market/item?id=hDDhvw"
-              target="_blank"
-              >Buy DanceYaw Right Now</a
-            >
+            <div class="price__desc">
+              <i class="bx bxs-check-square"></i>
+              <p class="price__text">0.50 NLE</p>
+            </div>
+
+            <div class="price__desc price__second">
+              <i class="bx bxs-check-square"></i>
+              <p class="price__text">Script source: Closed</p>
+            </div>
+
+            <div class="price__buy">
+              <a
+                href="https://en.neverlose.cc/market/item?id=hDDhvw"
+                target="_blank"
+                >Buy DanceYaw Right Now</a
+              >
+            </div>
           </div>
         </div>
       </section>

@@ -93,7 +93,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
+  max-width: 960px;
   margin-inline: 1.5rem;
 }
 
@@ -190,6 +190,20 @@ img {
   gap: 2rem 3rem;
 }
 
+.active-link {
+  color: var(--first-color);
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 2px;
+  background-color: var(--first-color);
+}
+
 .nav__link {
   display: flex;
   column-gap: 0.5rem;
@@ -198,6 +212,7 @@ img {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
   transition: color 0.3s;
+  position: relative;
 }
 
 .nav__link:hover {
@@ -721,9 +736,10 @@ img {
   text-align: center;
   font-size: var(--small-font-size);
   font-family: var(--paragraph-font);
+  line-height: 2;
 }
 
-.price__container {
+.price__second-buy {
   background-color: var(--container-color);
   border-radius: 0.625rem;
   padding: 2rem 1.5rem;
@@ -801,4 +817,218 @@ img {
 
 .show-scroll {
   bottom: 8rem;
+}
+
+.hide-for-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .about__card,
+  .screenshots__card {
+    width: calc(100% - 2rem);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin-inline: 2rem;
+  }
+
+  .hide-for-desktop {
+    display: none;
+  }
+
+  .hide-for-mobile {
+    display: block;
+  }
+
+  .home__title {
+    text-align: center;
+  }
+
+  .home__description {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .home__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__buttons {
+    width: 30%;
+    padding: 12px 0;
+  }
+
+  .home__more {
+    right: 0rem;
+  }
+
+  .intro__container,
+  .about,
+  .steps,
+  .screenshots,
+  .price {
+    margin-inline: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-block: 4rem;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+    padding: 0 6rem;
+  }
+
+  .home__description {
+    padding: 0 4rem;
+    font-size: var(--normal-font-size);
+  }
+
+  .intro__container,
+  .price__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .intro__box {
+    align-items: initial;
+  }
+
+  .intro__data {
+    order: 1;
+  }
+
+  .intro__title,
+  .intro__description {
+    text-align: initial;
+  }
+
+  .intro__title {
+    line-height: 1.6;
+  }
+
+  .intro__popup img {
+    width: calc(100% - 6rem);
+  }
+
+  .about__subtitle-section {
+    padding: 0 6rem;
+  }
+
+  .steps__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .price__second-buy {
+    margin-top: 0;
+  }
+
+  .price__title,
+  .price__description {
+    text-align: initial;
+  }
+
+  .price__container {
+    column-gap: 3rem;
+  }
+
+  .nav,
+  .nav__menu {
+    width: 342px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .section {
+    padding-block: 6rem;
+  }
+
+  .header {
+    top: 0;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .nav {
+    border-radius: initial;
+    width: 100%;
+    height: calc(var(--header-height) + 1.5rem);
+    background-color: transparent;
+    box-shadow: none;
+    padding-inline: 0;
+  }
+
+  .nav__toggle i,
+  .nav__close i {
+    display: none;
+  }
+
+  .nav__menu {
+    width: initial;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__link {
+    font-size: var(--small-font-size);
+    font-family: var(--paragraph-font);
+    color: #fff;
+  }
+
+  .nav__link i {
+    display: none;
+  }
+
+  .active-link {
+    color: var(--first-color);
+  }
+
+  .footer__info {
+    padding-bottom: 0;
+  }
+
+  .scroll-header {
+    background: var(--container-color);
+    box-shadow: 0 0px 20px hsla(69, 100%, 50%, 0.2);
+  }
+
+  .intro__popup img,
+  .screenshots__popup img {
+    width: 50%;
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 2.5;
+  }
 }
